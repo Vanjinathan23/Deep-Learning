@@ -1,0 +1,17 @@
+from PIL import Image
+import numpy as np
+
+# Read image path from user
+image_path = input("Enter image path: ")
+
+# Open image
+img = Image.open(image_path)
+
+# Convert image to NumPy array
+pixels = np.array(img)
+
+# Display image information
+print("Image Shape:", pixels.shape)
+
+print("\nPixel Values:")
+print(pixels)
